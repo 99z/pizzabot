@@ -72,12 +72,18 @@ function compareX(c1, c2) {
 function findPath(coords) {
     let path = '';
     let insertedOrigin = false;
+
+    // If the first coordinate is not the origin, then prepend (0, 0) to the
+    // coordinate array and set insertedOrigin to true
+    // This way we always begin traversal at (0, 0)
     if ((coords[0].x !== 0) && (coords[0].y !== 0)) {
         coords.unshift({x: 0, y: 0});
         insertedOrigin = true;
     }
 
     for (let i = 0; i < coords.length - 1; i++) {
+        // If first coordinate is the origin and we didn't manually insert it,
+        // then we need to deliver
         if (
             (coords[i].x === 0) &&
             (coords[i].y === 0) &&
