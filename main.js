@@ -1,7 +1,7 @@
 const pizzabot = require('./pizzabot');
 
 if (!process.argv[2]) {
-    console.error(`usage: node main.js "NxN (x1, y1) (x2, y2) ...`);
+    console.error(`usage: node main.js "NxN (x1, y1) (x2, y2) ..."`);
     process.exit(1);
 }
 
