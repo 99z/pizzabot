@@ -1,0 +1,15 @@
+{
+  "name": "pizzabot",
+  "version": "1.0.0",
+  "description": "PizzaBot test for Slice",
+  "main": "main.js",
+  "dependencies": {
+    "tape": "^4.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "author": "Nicolas S. Montanaro",
+  "license": "ISC"
+}
